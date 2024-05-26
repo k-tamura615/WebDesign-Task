@@ -1,0 +1,31 @@
+table,th,td {
+    border: solid 1px honeydew;
+    border-collapse: collapse;
+}
+body{
+    color: aliceblue;
+    background-color: black;    
+}
+a{
+    color: pink;
+}
+h4{
+    color: pink;
+    font-size: 25px;
+}
+h5{
+    font-size: 15px;
+}
+.name{
+    width: 100px;
+}
+.syo{
+    width: 1000px;
+}
+.oto{
+    width: 100px;
+}
+h2{
+    font-size: 40px;
+    color: palevioletred;
+}
