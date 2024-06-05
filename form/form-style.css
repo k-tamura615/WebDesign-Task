@@ -5,6 +5,6 @@ fieldset{
     margin: 30px;
 }
 
-input{
-    margin: 10px;
+input[type]{
+    margin: 9px;
 }
