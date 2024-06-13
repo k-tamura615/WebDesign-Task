@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録フォーム</title>
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+    <p>必須事項を入力の上、送信ボタンを押してください。</p>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <table class="tabel">
+            <tr>
+                <td class="dake">ID <span>必須</span>（メールアドレス）</td>
+                <td><input type="email" name="emaile" size="30" placeholder="例: xxx@morijyobi.ac.jp" required></td>
+            </tr>
+            <tr>
+                <td class="dake">パスワード <span class="h">必須</span> <span class="f-siz">（英数字８文字以上）</span></td>
+                <td><input type="password" name="passwprd" size="30" minlength="8" required><label><input
+                            type="checkbox" name="p-hyouzi">パスワードを表示する</label> </td>
+            </tr>
+            <tr>
+                <td class="dake">氏名 <span class="h">必須</span></td>
+                <td>姓：<input type="text" name="f-name" placeholder="例: 盛岡" required>
+                    名: <input type="text" name="l-name" placeholder="例: 太郎" required></td>
+            </tr>
+            <tr>
+                <td class="dake">住所</td>
+                <td>〒 <input type="text" name="ban" size="8" value="020-0021" readonly><br>
+                    <input type="text" name="ken" value="岩手県盛岡市中央通３丁目" readonly><br>
+                    <input type="text" name="banti" placeholder="番地"><br> <input type="text" name="tatemono"
+                        placeholder="建物名" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td class="dake">携帯電話番号 <span class="h">必須</span><span class="f-siz">（ハイフンなし）</span></td>
+                <td><input type="tel" name="tel" required></td>
+            </tr>
+            <tr>
+                <td class="dake">学年・学科 <span class="h">必須</span></td>
+                <td>学科: <select name="gaka" required>
+                        <option value="">学科を選択してください</option>
+                        <option value="sistem">システム系学科</option>
+                        <option value="bizinesu">ビジネス系学科</option>
+                        <option value="dezain">デザイン系学科</option>
+                    </select>
+                    学年: <select name="gaka" required>
+                        <option value="">学年を選択してください</option>
+                        <option value="1">１年</option>
+                        <option value="2">２年</option>
+                        <option value="3">３年</option>
+                        <option value="4">４年</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="dake">お得な情報・クーポン <span class="h">必須</span></td>
+                <td><label><input type="radio" name="zyouhou" value="yes" required>受け取る </label>
+                    <label><input type="radio" name="zyouhou" value="no">受け取らない </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="dake">ご意見・ご要望 <span class="f-siz">（200字以内でご記入ください）</span></td>
+                <td><textarea name="iken" cols="50" rows="5" maxlength="200"></textarea></td>
+            </tr>
+        </table>
+        <table>
+            <td> <button type="reset" class="l">内容をクリアする</button> </td>
+            <td> <button type="submit" class="s">送信</button> </td>
+        </table>
+    </form>
+</body>
+
+</html>

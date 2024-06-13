@@ -1,0 +1,25 @@
+.h{
+    font-size:10px;
+    color: white;
+    background-color: red;
+}
+.dake{
+    background-color:grey;
+}
+
+.tabel{
+background-color: lightcyan;
+}
+.f-siz{
+    font-size: 13px;
+}
+.l{
+    width: 100px;
+    height: 50px;
+    margin: 0 0 0 auto;
+}
+.s{
+    width: 100px;
+    height: 50px;
+    margin: 0 0 0 auto;
+}
